@@ -1,0 +1,174 @@
+.wallet-left-panel {
+  background-color: #1A1B23;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 80%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 16px;
+  height: 100%;
+
+}
+
+.wallet-top {
+  flex-grow: 1;
+}
+
+.wallet-logo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 24px;
+}
+
+.wallet-icon {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.vingt-io {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+.wallet-header-wrapper{
+  display: block; 
+  width: 100%;
+}
+
+.wallet-title {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  
+}
+
+.wallet-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  text-align: left;
+  white-space: normal;
+  word-break: break-word;
+  
+}
+
+
+.wallet-link {
+  font-size: 0.875rem;
+  color: #6366F1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.wallet-footer {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.wallet-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #4b5563;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dot.active {
+  background-color: #6366F1;
+}
+
+.powered-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.brand-logo {
+  width: 30px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.vingt-io-brand {
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
+  padding-top: 0;
+}
+@media (max-width: 767px) {
+  .wallet-left-panel {
+    width: 70% ;
+    max-width: 100% ;
+    padding: 16px ;
+    box-sizing: border-box;
+  }
+
+  .wallet-description {
+    width: 100% ;
+    display: block ;
+    white-space: normal;
+    word-break: break-word;
+    text-align: left;
+  }
+
+  .wallet-title {
+    white-space: normal !important;
+    font-size: 1.25rem;
+  }
+
+  .powered-text {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+    justify-items: center; 
+  }
+  .wallet-grid {
+    grid-template-columns: 1fr !important; 
+    gap: 10px;
+  }
+
+  .wallet-option {
+    width: 90%; 
+    padding: 10px;
+    font-size: 14px;
+    max-width: 320px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+  }
+
+  .wallet-option img {
+    width: 24px;
+    height: 24px;
+  }
+} 

@@ -1,0 +1,258 @@
+ .modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.modal-content {
+  background-color: #1A1A1A;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 100%;
+  padding: 24px;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.wallet-heading{
+  margin-top: 65px;
+  font-size: 30px;
+}
+
+
+.wallet-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.close-button {
+  position: absolute;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  top: 16px;
+  right: 16px;
+  line-height: 1;
+}
+
+.modal-body h2 {
+  color: white;
+  font-size: 28px;
+  margin: 0 0 12px;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 24px;
+}
+
+.terms label {
+  color: #999;
+  font-size: 14px;
+}
+
+.terms a {
+  color: #5C5CFF;
+  text-decoration: none;
+}
+
+.wallet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.wallet-option {
+  background-color: #2A2A2A;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.wallet-option:hover {
+  background-color: #333;
+  border-color: #444;
+}
+
+.wallet-option img {
+  width: 30px;
+  height: 30px;
+}
+
+.help-button {
+  width: 100%;
+  background-color: #2A2A2A;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+  color: #999;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.help-icon {
+  background-color: #333;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+.modal-footer {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.wallet-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+
+  display: block; 
+  width: 100%;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.no-wallet-link {
+  color: #5C5CFF;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.modal-content-two-pane {
+  display: flex;
+  width: 80%;             
+  max-width: 700px;      
+  height: 480px;         
+  background-color: #1A1A1A;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+
+.left-panel {
+  width: 31%;
+  background-color: #1A1B23;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.right-panel {
+  width: 70%;
+  padding: 24px;
+  background-color: #1A1A1A;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+
+@media (max-width: 767px) {
+  .modal-content-two-pane {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+  }
+
+  .left-panel {
+    order: 1;
+  }
+
+  .right-panel {
+    order: 2;
+  }
+
+  .wallet-left-panel {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .wallet-description,
+  .wallet-title {
+    white-space: normal;
+  }
+
+  .modal-overlay {
+    align-items: flex-start;
+    overflow-y: auto;
+    padding-top: 40px;
+  }
+
+  .wallet-grid {
+    grid-template-columns: 1fr;
+  }
+  .no-wallet-link {
+    grid-template-columns: 1fr;
+  }
+
+  .powered-text {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .modal-body h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .modal-content-two-pane {
+    max-width: 95%;
+    height: auto;
+  }
+
+  .left-panel {
+    width: 40%;
+  }
+
+  .right-panel {
+    width: 60%;
+  }
+}
+ 
